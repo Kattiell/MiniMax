@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <title>Mini Max</title>
+  </head>
+  <body>
+    <a id="open" href="#modal-open"></a>
+    <div class="main">
+      <div class="row">
+        <div class="column line-right">
+          <div class="cell" onclick="jogaHumano('00')">
+            <span class="pedra" id="00"></span>
+          </div>
+        </div>
+        <div class="column line-right">
+          <div class="cell" onclick="jogaHumano('01')">
+            <span class="pedra" id="01"></span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('02')">
+            <span class="pedra" id="02"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row line-top">
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('10')">
+            <span class="pedra" id="10"></span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('11')">
+            <span class="pedra" id="11"></span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('12')">
+            <span class="pedra" id="12"></span>
+          </div>
+        </div>
+      </div>
+      <div class="row line-top">
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('20')">
+            <span class="pedra" id="20"></span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('21')">
+            <span class="pedra" id="21"></span>
+          </div>
+        </div>
+        <div class="column">
+          <div class="cell" onclick="jogaHumano('22')">
+            <span class="pedra" id="22"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal-open" class="modal">
+      <div onClick="document.getElementById('close').click();"></div>
+      <div>
+        <a id="close" href="#" title="Close" class="modal-close">Close</a>
+        <h1 id="winner"></h1>
+        <p id="text"></p>
+      </div>
+    </div>
+  </body>
+</html>
